@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ECF5FF"
+                    android:paddingTop="10dp"
+                    android:layout_margin="0.5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/device_info"
+                        android:textSize="25sp"/>
+
+                    <TextView
+                        android:background="#99FFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:layout_margin="0.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_name"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_device_energy_consumption_name"
+                            android:text=""
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_available"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_device_energy_consumption_availability"
+                            android:text="@string/unavailable"
+                            android:textSize="20sp"/>
+                    </TableRow>
+
+                    <TextView
+                        android:background="#99FFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:layout_margin="0.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_uuid"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_device_enery_consumption_uuid"
+                            android:text=""
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/device_id"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_device_enery_consumption_id"
+                            android:text=""
+                            android:textSize="20sp"/>
+                    </TableRow>
+
+                    <TextView
+                        android:background="#99FFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/title_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="#ECF5FF"
+                    android:text="有功功率(W)"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:background="#99FFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:id="@+id/activePowerViewLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ECF5FF"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:background="#99FFFF"
+                        android:height="1dp"
+                        android:width="0dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="能耗监测"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:background="#99FFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TableRow android:background="#ffffff"
+                              android:layout_margin="0.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:background="#ffffff"
+                            android:text="@string/tvACurr"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/tvACurrent"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="start"
+                            android:paddingStart="5dp"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:width="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:background="#FFFFFF"
+                            android:text="@string/tvABVoltage"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/tvABVoltage"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="start"
+                            android:paddingStart="5dp"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:width="0dp" />
+
+                    </TableRow>
+
+                    <TextView
+                        android:background="#99FFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TableRow android:background="#ffffff" android:layout_margin="0.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:background="#FFFFFF"
+                            android:text="@string/tvBCurr"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/tvBCurrent"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="start"
+                            android:paddingStart="5dp"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:width="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:background="#FFFFFF"
+                            android:text="@string/tvPower"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/tvActivePower"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="start"
+                            android:paddingStart="5dp"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:width="0dp" />
+
+                    </TableRow>
+
+                    <TextView
+                        android:background="#99FFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TableRow android:background="#ffffff" android:layout_margin="0.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:background="#FFFFFF"
+                            android:text="@string/tvCCurr"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/tvCCurrent"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="start"
+                            android:paddingStart="5dp"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:width="0dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:background="#FFFFFF"
+                            android:text="@string/tvEnergy"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/tvEnergyCosumption"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="start"
+                            android:paddingStart="5dp"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:width="0dp" />
+
+                    </TableRow>
+                    <TextView
+                        android:background="#99FFFF"
+                        android:height="1dp"
+                        android:width="0dp" />
+
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

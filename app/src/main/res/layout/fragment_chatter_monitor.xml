@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECF5FF"
+                android:paddingTop="10dp"
+                android:layout_margin="0.5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_info"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:background="#99FFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:layout_margin="0.5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/device_name"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_device_chatter_name"
+                        android:text=""
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/device_available"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_device_chatter_availability"
+                        android:text="@string/unavailable"
+                        android:textSize="20sp"/>
+                </TableRow>
+
+                <TextView
+                    android:background="#99FFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:layout_margin="0.5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/device_uuid"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_device_chatter_uuid"
+                        android:text=""
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/device_id"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_device_chatter_id"
+                        android:text=""
+                        android:textSize="20sp"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:background="#99FFFF"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECF5FF"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/chatter_monitor"
+                    android:textSize="21sp"/>
+
+                <TextView
+                    android:background="#99FFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <TableRow android:background="#ffffff" android:layout_margin="0.5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="@string/tvSound"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/tvSoundChatter"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="start"
+                        android:paddingStart="5dp"
+                        android:text="false"
+                        android:textSize="20sp"
+                        android:width="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="@string/tvXChatter"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/tvXChatter"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="start"
+                        android:paddingStart="5dp"
+                        android:text="false"
+                        android:textSize="20sp"
+                        android:width="0dp" />
+
+                </TableRow>
+
+                <TextView
+                    android:background="#99FFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <TableRow android:background="#ffffff" android:layout_margin="0.5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="@string/tvYChatter"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/tvYChatter"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="start"
+                        android:paddingStart="5dp"
+                        android:text="false"
+                        android:textSize="20sp"
+                        android:width="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="@string/tvZChatter"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/tvZChatter"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="start"
+                        android:paddingStart="5dp"
+                        android:text="false"
+                        android:textSize="20sp"
+                        android:width="0dp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:background="#99FFFF"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

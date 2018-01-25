@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/dark_white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rg_child_fragment_sensor_tab"
+        android:background="@color/white">
+
+        <RadioButton
+            android:id="@+id/rb_energy_consumption_fragment"
+            style="@style/RadioButtonTab"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:checked="true"
+            android:text="能耗监测"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_chatter_fragment"
+            style="@style/RadioButtonTab"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="颤振监测"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl_sensor_child_fragment_container"/>
+
+</LinearLayout>

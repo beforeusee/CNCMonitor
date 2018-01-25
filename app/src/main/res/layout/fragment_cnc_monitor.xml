@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/dark_white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rg_child_fragment_cnc_tab"
+        android:background="@color/white">
+
+        <RadioButton
+            android:id="@+id/rb_cnc_basis_fragment"
+            style="@style/RadioButtonTab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="CNC信息"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_cnc_path_simulation_fragment"
+            style="@style/RadioButtonTab"
+            android:text=""
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl_cnc_child_fragment_container"/>
+
+</LinearLayout>
